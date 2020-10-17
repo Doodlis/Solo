@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.11.0/underscore-min.js"></script>
+<script src="model.js"></script>
+<script src="view.js"></script>
+<script src="controller.js"></script>
+<script>
+  $( document ).ready(function() {
+      var newModel = Model();
+      var newView = View();
+      var newController = Controller(newModel, newView);
+      newController.doAllOfIt();
+
+  });
+
+  </script>
+<title>Page Title</title>
+</head>
+<body>
+<div  id="allMessages"></div>
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+</body>
+</html>
